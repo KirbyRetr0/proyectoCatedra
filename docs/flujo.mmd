@@ -1,0 +1,21 @@
+flowchart TD
+ A[Inicio] --> B[Ingresar PIN de 4 dígitos]
+ B --> C{¿PIN válido? - Fase futura}
+ C -- No --> B
+ C -- Sí --> D[Menú de acciones]
+ D --> E[Depósito]
+ D --> F[Retiro]
+ D --> G[Consulta de saldo]
+ D --> H[Pago de servicios]
+ H --> H1{Elegir servicio}
+ H1 --> H2[Energía / Internet / Telefonía / Agua]
+ D --> I[Historial]
+ D --> J[Gráfico de transacciones]
+ E --> D
+ F --> D
+ G --> D
+ H2 --> D
+ I --> D
+ J --> D
+ D --> K[Cerrar sesión]
+ K --> B
